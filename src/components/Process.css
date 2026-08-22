@@ -1,0 +1,51 @@
+.process-section {
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 96px 48px;
+}
+.process-track {
+  display: flex;
+  gap: 0;
+  margin-top: 56px;
+  position: relative;
+}
+.proc-step {
+  flex: 1;
+  text-align: center;
+  padding: 64px 16px 0;
+  position: relative;
+}
+.proc-connector {
+  position: absolute;
+  top: 24px; right: -2px;
+  width: 50%; height: 1px;
+  background: var(--border);
+  z-index: 0;
+}
+.proc-dot {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00C9B1, #00A8CC);
+  color: #0D1117;
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  cursor: default;
+}
+.proc-step h4 { font-size: 14px; font-weight: 700; margin-bottom: 8px; color: #fff; }
+.proc-step p  { font-size: 12px; color: var(--text-muted); line-height: 1.65; }
+@media (max-width: 768px) {
+  .process-section { padding: 64px 24px; }
+  .process-track { flex-direction: column; gap: 40px; }
+  .proc-step { padding: 0 0 0 64px; text-align: left; }
+  .proc-dot  { left: 0; transform: none; }
+  .proc-connector { display: none; }
+}
