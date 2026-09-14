@@ -16,11 +16,6 @@ export default function Hero() {
 
       <motion.div className="hero-inner" variants={stagger} initial="hidden" animate="visible">
 
-        <motion.div className="hero-badge" variants={fadeUp}>
-          <span className="hero-badge-dot" />
-          Leading Innovation in the Next Era
-        </motion.div>
-
         <motion.h1 className="hero-h1" variants={fadeUp}>
           We Build Digital<br />
           Products That{' '}

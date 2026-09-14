@@ -32,11 +32,17 @@ export default function Navbar() {
       animate={{ y: 0,   opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
     >
-      {/* Logo */}
-     <Link to="/" className="nav-logo">
-     <img src={logo} alt="softnexsol" className="nav-logo-img" />
-     <span className="nav-logo-text">SOFTNEXSOL</span>
-     </Link>
+  {/* Logo */}
+        <Link to="/" className="nav-logo">
+          <img src={logo} alt="softnexsol" className="nav-logo-img" />
+
+          <div className="nav-logo-content">
+            <span className="nav-logo-text">SOFTNEXSOL</span>
+            <span className="nav-logo-tagline">
+              Leading Innovation in the Next Era
+            </span>
+          </div>
+        </Link>
 
       {/* Desktop links */}
       <div className="nav-links">
