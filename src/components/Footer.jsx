@@ -9,7 +9,7 @@ import './Footer.css';
 const cols = {
   Services: ['Web Development','Digital Marketing','WordPress','UX/UI Design','SaaS Development','E-Commerce','Data Analytics'],
   Company:  ['About Us','Portfolio','Careers','Blog','Contact'],
-  Contact:  ['5 BRAYFORD SQUARE, UNIT 6252, LONDON, UK E1 0SG','hello@softnexsol.com','+447882507703'],
+  Contact:  ['5 BRAYFORD SQUARE, UNIT 6252, LONDON, UK E1 0SG','ceo.softnexsol@gmail.com','+447882507703'],
 };
 
 export default function Footer() {
